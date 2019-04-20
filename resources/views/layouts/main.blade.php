@@ -19,5 +19,22 @@
 <script src="{{ mix('js/app.js') }}"></script>
 <script src="{{ mix('js/vendor.js') }}"></script>
 <script src="{{ mix('js/manifest.js') }}"></script>
+@if(config('services.recaptcha.enable'))
+
+<script src="https://www.recaptcha.net/recaptcha/api.js?render={{ config('services.recaptcha.site_key') }}"></script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('{{ config('services.recaptcha.site_key') }}', {action: '@yield('action', 'default')'}).then(function(token) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", '/captcha', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({
+                'token': token
+            }));
+        });
+    });
+</script>
+
+@endif
 </body>
 </html>

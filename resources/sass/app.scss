@@ -35,6 +35,10 @@ $input-focus-box-shadow-color: $info;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+.grecaptcha-badge{
+  visibility: collapse !important;
+}
+
 .logo {
   margin: 20px auto;
 }
