@@ -1,0 +1,26 @@
+<?php
+return [
+
+    'login' => 'Log In',
+    'email_address' => 'Email Address',
+    'example_email' => 'name@example.com',
+    'password' => 'Password',
+    'remember_me' => 'Remember Me',
+    'forgot_password' => 'Forgot password?',
+    'login_with_github' => 'Log in with GitHub',
+    'new_here' => 'Don\'t have an account?',
+    'click_to_sign_up' => 'Click here to Sign Up.',
+    'sign_up' => 'Sign Up',
+    'name' => 'Your Name',
+    'your_name' => 'John Doe',
+    'subscribe_to_us' => 'Subscribe to our mailing list for news and promotions.',
+    'agree_terms' => 'By signing up, logging in or any use of our services, you agree to our <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>.',
+    'sign_up_with_github' => 'Sign up with GitHub',
+    'already_a_member' => 'Already have an account?',
+    'click_to_log_in' => 'Click here to log in.',
+    'reset_password_description' => 'Don\'t worry, you can still get your account back!<br/>To confirm it\'s really you, we will send a recovery link to your email, you\'ll be able to reset your password after the verification.',
+    'send_recovery_link' => 'Send recovery link',
+    'recovery_link_sent' => 'Recovery Link Sent',
+    'recovery_link_sent_description' => 'If the email address you provided is valid, a recovery link should\'ve been sent to your email, please follow the instructions to finish your password reset progress.<br/><br/>If you don\'t receive this email in 5 minutes, you may <a href="/password/reset">click here</a> to try again.',
+    'logged_out' => 'You\'ve been signed out.',
+];
