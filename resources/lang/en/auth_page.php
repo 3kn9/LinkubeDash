@@ -21,6 +21,6 @@ return [
     'reset_password_description' => 'Don\'t worry, you can still get your account back!<br/>To confirm it\'s really you, we will send a recovery link to your email, you\'ll be able to reset your password after the verification.',
     'send_recovery_link' => 'Send recovery link',
     'recovery_link_sent' => 'Recovery Link Sent',
-    'recovery_link_sent_description' => 'If the email address you provided is valid, a recovery link should\'ve been sent to your email, please follow the instructions to finish your password reset progress.<br/><br/>If you don\'t receive this email in 5 minutes, you may <a href="/password/reset">click here</a> to try again.',
+    'recovery_link_sent_description' => 'If the email address you provided(:email) is registered with us, a recovery link should\'ve been sent to your email, please follow the instructions to finish your password reset progress.<br/><br/>If you don\'t receive this email in 5 minutes, you may <a href="/account/recovery">click here</a> to try again.',
     'logged_out' => 'You\'ve been signed out.',
 ];

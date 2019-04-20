@@ -45,7 +45,7 @@
                 <div class="field">
                     <div class="columns">
                         <div class="column">
-                            <a class="has-text-left" href="/password/reset">{{ __('auth_page.forgot_password') }}</a>
+                            <a class="has-text-left" href="{{ route('password.request') }}">{{ __('auth_page.forgot_password') }}</a>
                         </div>
                         <div class="column">
                             <div class="has-text-right">

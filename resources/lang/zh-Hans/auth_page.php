@@ -21,5 +21,6 @@ return [
     'reset_password_description' => '别担心，您仍然可以取回您的账号!<br>为了确认您的身份，我们将向您的电子邮箱地址发送一个恢复链接，您将能够在完成验证后重新设置密码。',
     'send_recovery_link' => '发送恢复链接',
     'recovery_link_sent' => '恢复链接已送出',
-    'recovery_link_sent_description' => '如果您提供的电子邮箱地址有效，恢复链接应当已经被发送至您的邮箱。请按照指示完成密码重置。<br/><br/>如果您在五分钟后仍然没有收到邮件，请<a href="/password/reset">点击此处</a>重新尝试恢复操作。',
+    'recovery_link_sent_description' => '如果您提供的电子邮箱地址(:email)已在本站注册，则恢复链接应当已经被发送至您的邮箱。请按照指示完成密码重置。<br/><br/>如果您在五分钟后仍然没有收到邮件，请<a href="/account/recovery">点击此处</a>重新尝试恢复操作。',
+    'logged_out' => '您已注销登录。',
 ];
