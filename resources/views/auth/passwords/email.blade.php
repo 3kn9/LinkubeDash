@@ -1,7 +1,7 @@
 @extends('layouts.auth')
 
 @section('box')
-    @if (session('status'))
+    @if (session('email'))
         <h3 class="subtitle is-3 has-text-centered">{{ __('auth_page.recovery_link_sent') }}</h3>
         <div class="has-text-centered has-text-info" style="font-size: 48px;">
             <i class="fas fa-check-square"></i>
@@ -10,7 +10,7 @@
             <div class="column">
                 <div class="field">
                     <p>
-                        {!! __('auth_page.recovery_link_sent_description') !!}
+                        {!! __('auth_page.recovery_link_sent_description', ['email' => session('email')]) !!}
                     </p>
                 </div>
             </div>
