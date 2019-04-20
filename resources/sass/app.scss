@@ -9,6 +9,8 @@
 // @import '~bootstrap/scss/bootstrap';
 
 // Bulma Customizations
+$body-background-color: auto;
+
 $cyan: #409EFF;
 $info: #409EFF;
 $input-shadow: 0;
@@ -28,8 +30,29 @@ $input-focus-box-shadow-color: $info;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 
-
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.logo {
+  margin: 20px auto;
+}
+
+.box-shadow {
+  -webkit-box-shadow: -1px 1px 15px -4px #000000;
+  box-shadow: -1px 1px 15px -4px #000000;
+  border-radius: 10px;
+}
+
+.auth-box {
+  width: 470px;
+}
+
+.auth-switch-link, .auth-switch-link:hover {
+  color: white;
+}
+
+.subscribe-checkradio {
+  display: inline-block;
 }
