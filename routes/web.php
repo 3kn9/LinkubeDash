@@ -19,7 +19,10 @@ Route::post('captcha', 'CaptchaController@processToken');
 
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
-Route::get('login/github', 'Auth\LoginController@loginWithGitHub')->name('github');
+
+Route::get('login/github', 'Auth\GitHubLoginController@redirectToGitHub')->name('github');
+Route::get('login/github/authorized', 'Auth\GitHubLoginController@authorizedByGitHub');
+
 Route::get('logout', 'Auth\LoginController@logout'); // ONLY FOR DEBUGGING
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 

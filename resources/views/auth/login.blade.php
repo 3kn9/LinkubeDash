@@ -9,6 +9,15 @@
 @endsection
 @endif
 
+@if($errors->has('notification'))
+@section('notification')
+    <div class="notification is-danger">
+        <button class="delete"></button>
+        {{ $errors->first('notification') }}
+    </div>
+@endsection
+@endif
+
 @section('box')
     <h3 class="subtitle is-3 has-text-centered">{{ __('auth_page.login') }}</h3>
     <div class="columns">
@@ -58,13 +67,13 @@
 
                 <div class="field">
                     <div class="control">
-                        <button class="button is-info is-fullwidth">{{ __('auth_page.login') }}</button>
+                        <button class="button is-info is-fullwidth" onclick="setLoading(this)">{{ __('auth_page.login') }}</button>
                     </div>
                 </div>
 
                 <div class="field">
                     <div class="control">
-                        <a href="{{ route('github') }}" class="button is-gray-light is-fullwidth">
+                        <a href="{{ route('github') }}" class="button is-gray-light is-fullwidth" onclick="setLoading(this)">
                         <span class="icon">
                             <i class="fab fa-github"></i>
                         </span>

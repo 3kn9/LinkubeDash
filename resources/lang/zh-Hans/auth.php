@@ -14,6 +14,8 @@ return [
     */
 
     'failed' => '电子邮箱地址或密码无效。',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.'
+    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'github_failed' => '与 GitHub 通信时发生错误。请稍候再试。',
+    'github_email_already_exist' => '您的 GitHub 账号所关联的电子邮箱地址已经被注册。',
 
 ];

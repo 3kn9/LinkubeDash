@@ -18,7 +18,8 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable();
+            $table->bigInteger('github_id')->nullable();
             $table->boolean('subcribe')->default(false);
             $table->float('balance', 8, 3)->default(0.0);
             $table->rememberToken();

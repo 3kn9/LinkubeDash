@@ -14,6 +14,8 @@ return [
     */
 
     'failed' => 'Invalid email address or password.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.'
+    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'github_failed' => 'Failed contacting GitHub. Please try again later.',
+    'github_email_already_exist' => 'The email address of your GitHub account is already registered with us.',
 
 ];
