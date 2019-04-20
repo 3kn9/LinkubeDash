@@ -6,7 +6,28 @@
 @import 'variables';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
+
+// Bulma Customizations
+$cyan: #409EFF;
+$info: #409EFF;
+$input-shadow: 0;
+$input-focus-border-color: hsl(0, 0%, 86%); // Grey-Lighter
+$input-focus-box-shadow-color: $info;
+
+// Bulma
+@import "~bulma/bulma";
+
+// Bulma Extensions
+@import "~bulma-checkradio/src/sass/index";
+@import "~bulma-switch/src/sass/index";
+
+// Font Awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
 
 .navbar-laravel {
   background-color: #fff;
