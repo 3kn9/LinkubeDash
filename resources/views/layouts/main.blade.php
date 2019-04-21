@@ -15,10 +15,13 @@
 
 @yield('content')
 
-<script src="{{ mix('js/random.js') }}"></script>
 <script src="{{ mix('js/app.js') }}"></script>
 <script src="{{ mix('js/vendor.js') }}"></script>
 <script src="{{ mix('js/manifest.js') }}"></script>
+<script src="{{ mix('js/random.js') }}"></script>
+
+@yield('script')
+
 @if(config('services.recaptcha.enable'))
 
 <script src="https://www.recaptcha.net/recaptcha/api.js?render={{ config('services.recaptcha.site_key') }}"></script>

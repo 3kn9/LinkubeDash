@@ -1,4 +1,5 @@
 
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
@@ -19,16 +20,25 @@ $input-focus-box-shadow-color: $info;
 
 // Bulma
 @import "~bulma/bulma";
+@import "love";
+@import "focus";
 
 // Bulma Extensions
 @import "~bulma-checkradio/src/sass/index";
 @import "~bulma-switch/src/sass/index";
+@import "~bulma-divider/src/sass/index";
+@import "~bulma-quickview/src/sass/index";
 
 // Font Awesome
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/regular";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 @import "~@fortawesome/fontawesome-free/scss/solid";
+
+.navbar-user-divider {
+  margin: 5px 0;
+  border-top: 1px solid $grey-lighter;
+}
 
 .navbar-laravel {
   background-color: #fff;
@@ -60,3 +70,31 @@ $input-focus-box-shadow-color: $info;
 .subscribe-checkradio {
   display: inline-block;
 }
+
+.nav-icon {
+  font-size: 16px;
+  margin-right: 5px !important;
+}
+
+.has-text-star {
+  color: #ffd257;
+}
+
+// dropdown for mobile workaround
+
+.navbar-item {
+
+  &.has-dropdown {
+    .navbar-dropdown {
+      display: none;
+    }
+    &.is-active {
+      .navbar-dropdown {
+        display: block;
+      }
+    }
+  }
+}
+
+
+

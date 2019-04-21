@@ -58,8 +58,8 @@
 
                 <div class="field">
                     <div class="control">
-                        <a href="{{ route('github') }}" class="button is-gray-light is-fullwidth">
-                        <span class="icon">
+                        <a href="{{ route('github') }}" class="button is-light is-fullwidth">
+                        <span class="icon nav-icon">
                             <i class="fab fa-github"></i>
                         </span>
                             <span>{{ __('auth_page.sign_up_with_github') }}</span>

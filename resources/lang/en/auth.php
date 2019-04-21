@@ -17,5 +17,6 @@ return [
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
     'github_failed' => 'Failed contacting GitHub. Please try again later.',
     'github_email_already_exist' => 'The email address of your GitHub account is already registered with us.',
+    'github_invalid_email' => 'We weren\'t able to read your email address, please check your GitHub settings.',
 
 ];

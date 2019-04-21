@@ -54,7 +54,7 @@
                 <div class="field">
                     <div class="columns">
                         <div class="column">
-                            <a class="has-text-left" href="{{ route('password.request') }}">{{ __('auth_page.forgot_password') }}</a>
+                            <a class="has-text-left" href="{{ route('account.recovery.request') }}">{{ __('auth_page.forgot_password') }}</a>
                         </div>
                         <div class="column">
                             <div class="has-text-right">
@@ -73,8 +73,8 @@
 
                 <div class="field">
                     <div class="control">
-                        <a href="{{ route('github') }}" class="button is-gray-light is-fullwidth" onclick="setLoading(this)">
-                        <span class="icon">
+                        <a href="{{ route('github') }}" class="button is-light is-fullwidth" onclick="setLoading(this)">
+                        <span class="icon nav-icon">
                             <i class="fab fa-github"></i>
                         </span>
                             <span>{{ __('auth_page.login_with_github') }}</span>

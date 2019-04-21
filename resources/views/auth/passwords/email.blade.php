@@ -19,7 +19,7 @@
         <h3 class="subtitle is-3 has-text-centered">{{ __('auth_page.forgot_password') }}</h3>
         <div class="columns">
             <div class="column">
-                <form method="POST" action="{{ route('password.email') }}">
+                <form method="POST" action="{{ route('account.recovery.email') }}">
                     @csrf
                     <div class="field">
                         <p>
