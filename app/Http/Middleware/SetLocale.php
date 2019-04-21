@@ -15,15 +15,19 @@ class SetLocale
      */
     public function handle($request, Closure $next)
     {
-        switch($request->getPreferredLanguage()){
-            case 'zh':
-            case 'zh_CN':
-            case 'zh-CN':
-            case 'zh-Hans':
-                app()->setLocale('zh-Hans');
-                break;
-            default:
-                app()->setLocale('en');
+        if(session()->exists('locale')){
+            app()->setLocale(session()->get('locale'));
+        } else {
+            switch($request->getPreferredLanguage()){
+                case 'zh':
+                case 'zh_CN':
+                case 'zh-CN':
+                case 'zh-Hans':
+                    app()->setLocale('zh-Hans');
+                    break;
+                default:
+                    app()->setLocale('en');
+            }
         }
 
         return $next($request);
