@@ -42,9 +42,14 @@ class LoginController extends Controller
 
     public function logout(Request $request)
     {
+        return Auth::check() ? $this->logoutAndRedirect() : back();
+    }
+
+    protected function logoutAndRedirect(){
         Auth::logout();
 
-        return redirect(route('login'))->with('logged_out', true);
+        return back()->with('logged_out', true);
+        // return redirect(route('login'))->with('logged_out', true);
     }
 
 }
