@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('telegram/' . config('telegram.bot_token'), 'TelegramBotController@callback')->name('telegram.webhook');
+Route::get('telegram/' . config('telegram.bot_token') . '/setWebhook', function() {
+    return \Telegram\Bot\Laravel\Facades\Telegram::setWebhook([
+        'url' => route('telegram.webhook')
+    ]);
+});

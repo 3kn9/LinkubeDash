@@ -43,3 +43,12 @@ Route::get('account/email/verify/resend', 'Auth\VerificationController@resend')-
 Route::get('dashboard', 'DashboardController@showOverview')->name('dashboard');
 
 Route::get('dashboard/account', 'DashboardController@showAccount')->name('dashboard.account');
+
+Route::get('telegram', function(){
+    $response = \Telegram\Bot\Laravel\Facades\Telegram::getMe();
+
+    $botId = $response->getId();
+    $firstName = $response->getFirstName();
+    $username = $response->getUsername();
+    dd(compact('response', 'botId', 'firstName', 'username'));
+});
