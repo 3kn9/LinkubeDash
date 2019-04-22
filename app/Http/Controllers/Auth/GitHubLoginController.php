@@ -47,6 +47,10 @@ class GitHubLoginController extends Controller
             "Authorization: token " . $token
         ]), true);
 
+        if(!$result['id']){
+            return $this->failedRedirect('auth.github_failed');
+        }
+
         $users = User::all();
         if($user = $users->where('github_id', $result['id'])->first()){
             Auth::login($user);
